@@ -22,7 +22,7 @@ heading_list = ["Postal code","District", "Appartments", "Type of Building", "m2
     ]
 
 # Writing the headers
-with open("asuntojen.csv", "w", newline = "") as csvfile:
+with open("output.csv", "w", newline = "") as csvfile:
             write = csv.writer(csvfile, delimiter = ",")
             write.writerow(heading_list)
 
@@ -67,7 +67,7 @@ def table_generator(x):
                         row.append(td.text)
 
                     # Appending the row in asuntojen.csv file  
-                    with open("asuntojen.csv", "a", newline = "") as csvfile:
+                    with open("output.csv", "a", newline = "") as csvfile:
                         write = csv.writer(csvfile, delimiter = ",")
                         write.writerow(row)
                     
