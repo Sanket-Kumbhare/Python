@@ -1,4 +1,5 @@
 import os
+import random
 clear_output = lambda : os.system('clear')
 stages = [
     '=====+=====',
@@ -8,7 +9,8 @@ stages = [
     '    / \ '
 ]
 chances = 5
-random_word = 'tuple'
+random_words = ['tuple', 'dictionary', 'integer', 'float', 'string']
+random_word = random.choice(random_words)
 show_underlines = ['_ '] * len(random_word)
 
 def ask_letter():
