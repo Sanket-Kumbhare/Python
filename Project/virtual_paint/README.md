@@ -1,4 +1,4 @@
-Little description of how it works
+#Little description of how it works
 1. Webcam takes the video(set on frames and each frame can be refered as image)
 2. Webcam each frames(images)is converted in HSV format (Hue, Saturation, Value) 
    so that we can find the mask of the required color.
